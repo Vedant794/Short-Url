@@ -1,9 +1,6 @@
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import background from "./assets/background.webp";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import shortUrl from "./assets/short-url.webp";
 import localFont from "next/font/local";
 
 const sour = localFont({
@@ -17,7 +14,6 @@ export default function Home() {
       className={` h-screen`}
       style={{ backgroundImage: `url("/background.avif")` }}
     >
-      <Navbar />
       <main className="h-[90vh] overflow-y-hidden flex justify-evenly items-center">
         <div className="left w-[45%] flex flex-col items-center">
           <span className={`text-2xl text-center ${sour.className} mb-4`}>
@@ -29,7 +25,7 @@ export default function Home() {
             for login. We understand your needs and hence we have created this
             URL shortener
           </span>
-          <Link href={"/"}>
+          <Link href={"/shorten"}>
             <Button variant={"default"} className="border border-white">
               Try Service
             </Button>
