@@ -21,7 +21,7 @@ function Navbar() {
           <Link href={"/"}>
             <li className="cursor-pointer">Home</li>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/shorten"}>
             <li className="cursor-pointer">Custom Short Links</li>
           </Link>
           <Link href={"/"}>
